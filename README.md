@@ -27,3 +27,19 @@
 <h3 align='center'>
   <a href='#'>Windows</a>
 </h3>
+<hr>
+<h2 align="center">
+  Dependencies:
+</h2>
+<h3 align='center'>
+  <a href='https://github.com/qwertyquerty/pypresence'>PyPresence</a>
+</h3>
+<h3 align='center'>
+  <a href='https://github.com/python-pillow/Pillow'>Pillow</a>
+</h3>
+<h3 align='center'>
+  <a href='https://github.com/segalion/bindglobal'>bindglobal</a>
+</h3>
+<h3 align='center'>
+  <a href='https://github.com/python/cpython/tree/master/Lib/tkinter'>Tkinter</a>
+</h3>

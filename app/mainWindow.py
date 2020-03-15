@@ -4,6 +4,7 @@ from pypresence.exceptions import InvalidID, ServerError
 from bindglobal import BindGlobal
 from tkinter import *
 from tkinter import messagebox
+import PIL
 from PIL import Image, ImageTk
 from app.constants import *
 from widgets.window import Window

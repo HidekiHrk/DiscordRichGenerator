@@ -8,6 +8,7 @@ __pycache__/
 
 # Project Specific #
 config.json
+DiscordRichGenerator/
 
 # Distribution / packaging
 .Python

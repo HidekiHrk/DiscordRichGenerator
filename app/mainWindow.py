@@ -38,7 +38,7 @@ class MainWindow(Window):
 
     # Close Event #
     def on_closing(self):
-        question = messagebox.askyesnocancel("Quit", 'Want to quit? (Ctrl+R to re-open)')
+        question = messagebox.askyesnocancel("Quit", 'Want to quit? (RCtrl+R to re-open)')
         if question:
             self.closeRunningLoop()
             self.master.destroy()

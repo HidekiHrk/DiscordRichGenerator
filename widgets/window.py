@@ -1,5 +1,5 @@
-import asyncio
-from tkinter import Frame, Tk, TclError
+import time
+from tkinter import Frame, Tk, TclError, BOTH
 
 class Window(Frame):
     def __init__(self, name="", size:tuple = None, master=None):
@@ -9,18 +9,25 @@ class Window(Frame):
         if size != None:
             self.master.wm_maxsize(*size)
             self.master.wm_minsize(*size)
-        self.pack()
+        self.pack(fill=BOTH, expand=True)
+        self.visible = True
+        self.changed = False
+
+    def setVisibility(self, value=True):
+        self.changed = True
+        self.visible = value
 
     def run(self):
-        loop = asyncio.get_event_loop()
-        loop.run_until_complete(self._run(loop))
-
-    async def _run(self, loop):
         activated = True
         while activated:
             try:
                 self.update()
-                await asyncio.sleep(0.01)
-            except TclError:
+                if self.changed:
+                    self.changed = False
+                    if self.visible:
+                        self.master.deiconify()
+                    else:
+                        self.master.withdraw()
+                time.sleep(0.01)
+            except (TclError, KeyboardInterrupt):
                 activated = False
-        loop.stop()

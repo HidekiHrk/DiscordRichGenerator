@@ -22,10 +22,10 @@
   Downloads:
 </h2>
 <h3 align='center'>
-  <a href='#'>Linux</a>
+  <a href='https://github.com/HidekiHrk/DiscordRichGenerator/releases/download/1.0/DiscordRichGenerator_Linux_x64.tar.gz'>Linux</a>
 </h3>
 <h3 align='center'>
-  <a href='#'>Windows</a>
+  <a>Windows (coming soon)</a>
 </h3>
 <hr>
 <h2 align="center">

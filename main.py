@@ -8,8 +8,7 @@ config = Config()
 
 mainw = MainWindow(
     title="Discord Rich Generator (By: HidekiHrk)",
-    icon='./img/icon.png',
-    appId=config['appId'])
+    icon='./img/icon.png')
 
 def main():
     mainw.run()

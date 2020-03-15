@@ -39,10 +39,9 @@ class MainWindow(Window):
 
     def definePresence(self, appId=None):
         if not appId:
-            self.presence = None
-        else:
-            self.presence = pypresence.Presence(
-                client_id=appId
-            )
-            self.presence.connect()
-            self.updatePresenceState()
+            appId = self.config['appId']
+        self.presence = pypresence.Presence(
+            client_id=appId
+        )
+        self.presence.connect()
+        self.updatePresenceState()
